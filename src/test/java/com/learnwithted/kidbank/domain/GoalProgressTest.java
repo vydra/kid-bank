@@ -6,25 +6,25 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class GoalProgressTest {
 
-  @Test
-  public void noProgressMadeIsZeroPercentProgress() throws Exception {
-    Goal goal = new Goal("goal", 100);
-
-    Percent percent = goal.progressMadeWith(0);
-
-    assertThat(percent.roundToInteger())
-        .isZero();
-  }
-
-  @Test
-  public void goalIsHalfwayReturns50PercentProgress() throws Exception {
-    Goal goal = new Goal("goal", 10_00);
-
-    Percent percent = goal.progressMadeWith(5_00);
-
-    assertThat(percent.roundToInteger())
-        .isEqualTo(50);
-  }
+//  @Test
+//  public void noProgressMadeIsZeroPercentProgress() throws Exception {
+//    Goal goal = new Goal("goal", 100);
+//
+//    Percent percent = goal.progressMadeWith(0);
+//
+//    assertThat(percent.roundToInteger())
+//        .isZero();
+//  }
+//
+//  @Test
+//  public void goalIsHalfwayReturns50PercentProgress() throws Exception {
+//    Goal goal = new Goal("goal", 10_00);
+//
+//    Percent percent = goal.progressMadeWith(5_00);
+//
+//    assertThat(percent.roundToInteger())
+//        .isEqualTo(50);
+//  }
 
   @Test
   public void goalIsAlmostHalfwayRoundsTo50PercentProgress() throws Exception {
